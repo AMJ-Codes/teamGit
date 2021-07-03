@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import OwResults from './OwResults';
+import OwClock from './OwClock';
 
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
 const key = '3af00e64fa574fb90f8896a9c6b5f1ba'
@@ -26,6 +27,8 @@ const OwApp = () => {
     return(
         <div className="main>">
             <div className="mainDiv">
+                <OwClock />
+                <hr />
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <span>Enter Your City (require) : </span>
                     <input type="text" name="city" onChange={(e) => setCity(e.target.value)} required />
