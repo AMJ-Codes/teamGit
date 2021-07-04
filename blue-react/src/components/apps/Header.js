@@ -10,7 +10,7 @@ const Header = () => {
     return(
         <header>
             <Navbar className='header'>
-                <NavbarBrand href='/'>72 Hour Project</NavbarBrand>
+                <NavbarBrand href='/'>72-Hour Project</NavbarBrand>
                 <Nav className='ml-auto' navbar>
                     <NavItem>
                         <NavLink href="https://github.com/AMJ-Codes/teamGit">
