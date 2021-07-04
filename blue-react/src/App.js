@@ -1,14 +1,21 @@
-// import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+
 import GetLocation from './geolocation/GetLocation';
-import OwApp from './components/apps/ow-api-app/OpenWeather';
+import Footer from './components/apps/Footer'
+import {
+  BrowserRouter as Router
+} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1>72 hour project</h1>
       <GetLocation />
-      <OwApp />
+      <Router>
+        <OwApp />
+      </Router>
+      <Footer />
     </div>
   );
 }
