@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 import GetLocation from './geolocation/GetLocation';
-import Footer from './components/apps/Footer'
+import Footer from './components/apps/Footer';
+import Header from './components/apps/Header';
 import {
   BrowserRouter as Router
 } from 'react-router-dom';
@@ -11,9 +12,9 @@ import {
 function App() {
   return (
     <div className="App">
+      <Header />
       <GetLocation />
       <Router>
-        <OwApp />
       </Router>
       <Footer />
     </div>
