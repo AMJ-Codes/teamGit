@@ -1,0 +1,41 @@
+.mainTest {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .mainDivTest {
+      width: 100%;
+      border: white solid 2px;
+  }
+  
+  .top {
+      text-align: center;
+      padding-bottom: 50px;
+  }
+  
+  .top h1 {
+      text-decoration: underline;
+  }
+  
+  .top button {
+      width: 300px;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      border: white solid 10px;
+  }
+  
+  .bottom {
+      margin-left: 8%;
+  }
+  
+  .bottom h4 {
+      text-decoration: underline;
+  }
+  
