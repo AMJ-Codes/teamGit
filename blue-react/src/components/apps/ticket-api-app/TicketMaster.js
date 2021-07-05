@@ -83,25 +83,25 @@ function TicketMaster(){
 
     const showEvents = () => {
         return data?._embedded?.events?.map((event, index) => {
-            return <li>{event.name}</li>
+            return <li><a href={event.url} target="_blank">{event.name}</a></li>
         });
     };
 
     const showAttractions = () => {
         return data?._embedded?.attractions?.map((attraction, index) => {
-            return <li>{attraction.name}</li>
+            return <li><a href={attraction.url} target="_blank">{attraction.name}</a></li>
         });
     };
 
-    const showProducts = () => {
-        return data?._embedded?.products?.map((product, index) => {
-            return <li>{product.name}</li>
-        });
-    };
+    // const showProducts = () => {
+    //     return data?._embedded?.products?.map((product, index) => {
+    //         return <li><a href={product.url} target="_blank">{product.name}</a></li>
+    //     });
+    // };
 
     const showVenues = () => {
         return data?._embedded?.venues?.map((venue, index) => {
-            return <li>{venue.name}</li>
+            return <li><a href={venue.url} target="_blank">{venue.name}</a></li>
         });
     };
 
@@ -109,9 +109,9 @@ function TicketMaster(){
     // console.log(data); // Testing
 
     return (
-        <div className='mainTest'>
-            <div className='mainDivTest'>
-                <div className="top">
+        <div className='mainTM'>
+            <div className='mainDivTM'>
+                <div className="topTM">
                     <h1>72 Hour Project</h1>
                     <br/>
                     <h2>Find events, attractions, products, and venues near you!</h2>
@@ -119,13 +119,15 @@ function TicketMaster(){
                     {lat && <p>Latitude: {lat}</p>}
                     {lng && <p>Longitude: {lng}</p>}
                 </div>
-                <div className="bottom">
+                <div className="bottomTM">
                     <h4>Events:</h4>
                         <ul>{showEvents()}</ul>
+                    <br/>
                     <h4>Attractions:</h4>
                         <ul>{showAttractions()}</ul>
-                    <h4>Products:</h4>
-                        <ul>{showProducts()}</ul>
+                    {/* <h4>Products:</h4>
+                        <ul>{showProducts()}</ul> */}
+                    <br/>
                     <h4>Venues:</h4>
                         <ul>{showVenues()}</ul>
                 </div>
