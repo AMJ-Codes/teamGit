@@ -6,6 +6,7 @@ import GetLocation from './geolocation/GetLocation';
 import Footer from './components/apps/Footer';
 import Header from './components/apps/Header';
 import Home from './components/apps/Home';
+import Logos from './components/Logos';
 
 import {
   BrowserRouter as Router
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Home />
       </Router>
+      <Logos/>
       <GetLocation />
       <Footer />
     </div>
