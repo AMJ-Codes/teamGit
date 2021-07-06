@@ -3,12 +3,12 @@ import React, {useState} from 'react';
 const baseURL = 'https://api.nasa.gov/planetary/earth/imagery'; 
 const key = 'qRicLhheDeuuCXyfCdg9fDHIYdAWIJVpAInXZMGR'
 
-const NasaApp = () => {
+const NasaImagery = () => {
 
     const [ imagery, setImagery ] = useState('');
 
     const fetchResults = () => {
-        let url = `${baseURL}&appid=${key}`;a
+        let url = `${baseURL}&appid=${key}`;
 
         fetch(url)
             .then(res => res.json())
@@ -32,11 +32,11 @@ const NasaApp = () => {
                     <button className="submit">Submit</button>
                 </form>
                 {
-                    results.length > 0 ? <OwResults results={results} /> : null
+                    results.length > 0 ? <NasaResults results={results} /> : null
                 }
             </div>
         </div>
     );
 };
 
-export default NasaApp;
+export default NasaImagery; 
