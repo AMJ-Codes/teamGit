@@ -12,35 +12,26 @@ const OwApp = () => {
     const [ latitude, setLatitude ] = useState(null);
     const [ longitude, setLongitude ] = useState(null);
 
-    const fetchWeather = () => {
+    const getWeather = () => {
         let url = `${baseURL}?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
-        fetch(GetLocation)
+        fetch(url)
             .then(res => res.json())
-            .then(data => setResults(data.response.docs))
+            .then(data => setResults(data.response))
             .catch(err => console.log(err));
     };
-
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     fetchResults();
-    // }
 
     return(
         <div className="main>">
             <div className="mainDiv">
-                <div style={{ background: '#008080' ,color: 'white' }}>
+                <div style={{ background: '#008080' , color: 'white' }}>
                 <OwClock />
+                <input value={latitude} onChange={e => setLatitude(e.target.value)} placeholder="enter latitude here"/>
+                <input value={longitude} onChange={e => setLongitude(e.target.value)} placeholder="enter longitude here"/>
+                <button onClick={() => getWeather()}>Click for Current Weather!</button>
                 <hr />
-                {/* <form onSubmit={(e) => handleSubmit(e)}>
-                    <span>Enter Your City (require) : </span>
-                    <input type="text" name="city" onChange={(e) => setCity(e.target.value)} required />
-                    <button className="submit">Submit</button>
-                </form> */}
-                {
-                    results.length > 0 ? <OwResults results={results} /> : null
-                }
-                </div>
+                { results ? <h2>{results.weather}</h2> : <div></div>}
+                 </div>
                 </div>
         </div>
     );
