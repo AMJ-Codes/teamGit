@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -36,3 +36,62 @@
     transform: rotate(360deg);
   }
 }
+
+#mainHome {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.mainDivHome h1 {
+  color: white;
+  padding-top: 30px;
+}
+
+.mainDivHome h2 {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.mainDivHome ul li {
+  display: inline;
+}
+
+.mainDivHome ul {
+  padding-bottom: 30px;
+}
+
+.mainDivHome li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mainDivHome link {
+  text-decoration: none;
+}
+
+#hrHome {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 4px solid white;
+  margin: 1em 0;
+  padding-bottom: 40px;
+}
+
+.header {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  height: 100px;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: lighter;
+  border: white solid 3px;
+}
+

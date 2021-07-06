@@ -5,6 +5,7 @@
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: white;
+    
   }
   
   .mainDivTM {
@@ -19,6 +20,11 @@
   
   .topTM h1 {
       text-decoration: underline;
+      padding-top: 30px;
+  }
+
+  .topTM h2 {
+      padding-bottom: 40px;
   }
   
   .topTM button {
@@ -30,7 +36,7 @@
   }
   
   .bottomTM {
-      
+      padding-bottom: 50px;
   }
   
   .bottomTM h4 {
