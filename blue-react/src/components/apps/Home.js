@@ -13,16 +13,14 @@ const Home = () => {
                 <h1>Welcome to Shavonne, Max, and Aaron's 72-Hour Project</h1>
                 <h2>Check Out the Individual Pages Below: </h2>
                 <ul>
-                    <li><Link to=' '>NASA by Aaron</Link></li> // ADD Nasa path
+                    <li><Link to=' '>NASA by Aaron</Link></li> 
                     <li><Link to='/weather'>Open Weather by Shavonne</Link></li>
-                    <li><Link to=' '>Ticket Master by Max</Link></li> // ADD Ticketmaster path
+                    <li><Link to=' '>Ticket Master by Max</Link></li> 
                 </ul>
             </div>
             <div className='mainDiv-route'>
                 <Switch>
-                    // ADD Nasa Route
                     <Route exact path='/weather'><OwApp /></Route>
-                    // ADD TicketMaster Route
                 </Switch>
             </div>
         </div>
