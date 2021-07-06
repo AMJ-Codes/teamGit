@@ -2,7 +2,7 @@ import {Row} from 'reactstrap';
 
 const Footer = () => {
     return(
-        <footer>
+        <footer className="footer">
             <Row>
                 <p>&copy; Shavonne Holton, Maxwell Horton, & Aaron Jefferson 2021</p>
             </Row>
