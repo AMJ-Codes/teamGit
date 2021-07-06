@@ -8,7 +8,7 @@ import {
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
 import OwApp from './ow-api-app/OpenWeather'
-import TicketMaster from './ticket-api-app/TicketMaster';
+import TicketMaster from './ticket-api-app/TicketMaster'
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
       <Card>
         <CardBody>
           <CardTitle tag="h5">Weather API</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">By Shavonne</CardSubtitle>
         </CardBody>
         <img width="100%" src="/assets/318x180.svg" alt="img.svg placeholder" />
         <CardBody>
@@ -44,7 +44,7 @@ const Home = () => {
       <Card>
         <CardBody>
           <CardTitle tag="h5">Ticket Master API</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted">By Max</CardSubtitle>
         </CardBody>
         <img width="100%" src="/assets/318x180.svg" alt="img.svg placeholder" />
         <CardBody>
