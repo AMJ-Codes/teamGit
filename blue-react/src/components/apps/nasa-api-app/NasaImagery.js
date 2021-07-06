@@ -27,7 +27,7 @@ const NasaApp = () => {
                 <Nasa/>
                 <hr/>
                 <form onSubmit={(e) => handleSubmit(e)}>
-                    <span>Enter Your City (require) : </span>
+                    <span>Enter your address: </span>
                     <input type="text" name="location" onChange={(e) => setLocation(e.target.value)} required />
                     <button className="submit">Submit</button>
                 </form>
