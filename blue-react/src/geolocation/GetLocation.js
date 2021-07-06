@@ -22,8 +22,9 @@ function GetLocation() {
     }
 
     return (
-        <div>
 
+        <div>
+        
         <button onClick={getLocation}>Get Location</button>
         <h1>Coordinates</h1>
         <p>{status}</p>
