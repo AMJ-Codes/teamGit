@@ -19,7 +19,7 @@ const OwClock = () => {
 
     return (
         <div>
-            <h2 className="section-title">Current Time</h2>
+            <h2>Current Time</h2>
             <hr className="explanation" />
             <p>{time}</p>
         </div>
