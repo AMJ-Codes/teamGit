@@ -1,0 +1,57 @@
+.mainTM {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    
+  }
+  
+  .mainDivTM {
+      width: 100%;
+      border: white solid 2px;
+  }
+  
+  .topTM {
+      text-align: center;
+      padding-bottom: 50px;
+  }
+  
+  .topTM h1 {
+      text-decoration: underline;
+      padding-top: 30px;
+  }
+
+  .topTM h2 {
+      padding-bottom: 40px;
+  }
+  
+  .topTM button {
+      width: 300px;
+      height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      border: white solid 10px;
+  }
+  
+  .bottomTM {
+      padding-bottom: 50px;
+  }
+  
+  .bottomTM h4 {
+      text-decoration: underline;
+  }
+
+  .bottomTM a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .bottomTM a:hover {
+      color: blue;
+  }
+
+  .bottomTM li {
+      list-style-type: none;
+  }
